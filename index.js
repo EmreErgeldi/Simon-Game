@@ -21,7 +21,6 @@ $("button").mouseup( async (e) =>{
   $(e.target).css("border", "8px solid black");
   playSound(e.target.classList[0]);
   playerPattern.push(e.target.classList[0]);
-  console.log(gamePattern + "\n" + playerPattern);
   if (gamePattern.length === playerPattern.length) {
     await checkAnswer();
   }
